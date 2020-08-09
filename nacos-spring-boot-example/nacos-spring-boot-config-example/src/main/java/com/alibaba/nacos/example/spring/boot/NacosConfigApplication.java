@@ -18,6 +18,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 @NacosPropertySource(dataId = "example", autoRefreshed = true)
 public class NacosConfigApplication {
+    public void sum(){
+        System.out.println("haha");
+    }
 
     public static void main(String[] args) {
         SpringApplication.run(NacosConfigApplication.class, args);
